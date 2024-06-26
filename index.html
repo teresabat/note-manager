@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Notas</h1>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar notas...">
+            </form>
+        </header>
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Título da nota" required>
+            <textarea id="note-content" placeholder="Conteúdo da nota" required></textarea>
+            <button type="submit">Adicionar Nota</button>
+        </form>
+        <ul id="notes-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
